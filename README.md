@@ -48,7 +48,7 @@ Berdasarkan hasil eksperimen dan analisis yang telah dilakukan, dapat ditarik be
 - Hasil eksperimen menunjukkan korelasi yang kuat antara kompleksitas teoretis algoritma dengan performa praktisnya.
 - Algoritma dengan kompleksitas O(n²) (Bubble Sort, Selection Sort, Insertion Sort) menunjukkan peningkatan waktu eksekusi yang drastis seiring dengan bertambahnya ukuran data.
 -	Algoritma dengan kompleksitas O(n log n) (Merge Sort, Quick Sort, Shell Sort) menunjukkan performa yang jauh lebih baik pada data berukuran besar.
-### 2.	Perbandingan Algoritma Pengurutan** 
+### 2.	Perbandingan Algoritma Pengurutan
 -	Quick Sort secara konsisten menunjukkan performa terbaik dalam hal waktu eksekusi, terutama pada dataset berukuran besar.
 -	Merge Sort menunjukkan performa yang hampir setara dengan Quick Sort dalam waktu eksekusi, namun dengan penggunaan memori yang lebih tinggi.
 -	Shell Sort menawarkan keseimbangan yang baik antara kompleksitas implementasi, penggunaan memori, dan waktu eksekusi.
