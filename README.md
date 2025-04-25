@@ -44,24 +44,24 @@ Hasil eksperimen menunjukkan:
 ## Kesimpulan
 Pemilihan algoritma pengurutan yang tepat sangat bergantung pada karakteristik data, ukuran dataset, dan batasan sumber daya. Untuk dataset berukuran besar, algoritma dengan kompleksitas O(n log n) seperti Quick Sort dan Merge Sort jauh lebih direkomendasikan dibandingkan algoritma O(n²) seperti Bubble Sort, Selection Sort, dan Insertion Sort.
 Berdasarkan hasil eksperimen dan analisis yang telah dilakukan, dapat ditarik beberapa kesimpulan:
-**1.	Korelasi Kompleksitas Teoretis dengan Performa Praktis**
+### 1.	Korelasi Kompleksitas Teoretis dengan Performa Praktis
 - Hasil eksperimen menunjukkan korelasi yang kuat antara kompleksitas teoretis algoritma dengan performa praktisnya.
 - Algoritma dengan kompleksitas O(n²) (Bubble Sort, Selection Sort, Insertion Sort) menunjukkan peningkatan waktu eksekusi yang drastis seiring dengan bertambahnya ukuran data.
 -	Algoritma dengan kompleksitas O(n log n) (Merge Sort, Quick Sort, Shell Sort) menunjukkan performa yang jauh lebih baik pada data berukuran besar.
-**2.	Perbandingan Algoritma Pengurutan** 
+### 2.	Perbandingan Algoritma Pengurutan** 
 -	Quick Sort secara konsisten menunjukkan performa terbaik dalam hal waktu eksekusi, terutama pada dataset berukuran besar.
 -	Merge Sort menunjukkan performa yang hampir setara dengan Quick Sort dalam waktu eksekusi, namun dengan penggunaan memori yang lebih tinggi.
 -	Shell Sort menawarkan keseimbangan yang baik antara kompleksitas implementasi, penggunaan memori, dan waktu eksekusi.
 -	Insertion Sort adalah pilihan terbaik di antara algoritma O(n²), terutama untuk dataset berukuran kecil atau hampir terurut.
 -	Bubble Sort dan Selection Sort tidak direkomendasikan untuk dataset berukuran besar karena performa yang sangat buruk.
-**3.	Pengaruh Jenis Data** 
+### 3.	Pengaruh Jenis Data
 -	Pengurutan data kata konsisten memerlukan waktu eksekusi yang lebih lama dibandingkan dengan pengurutan data angka, karena kompleksitas operasi perbandingan string.
 -	Penggunaan memori untuk data kata signifikan lebih tinggi dibandingkan dengan data angka, yang menunjukkan pentingnya mempertimbangkan jenis data dalam pemilihan algoritma pengurutan.
-**4.	Rekomendasi Penggunaan Algoritma** 
+### 4.	Rekomendasi Penggunaan Algoritma
 -	Untuk dataset berukuran kecil (< 10.000 elemen), semua algoritma dapat digunakan dengan waktu eksekusi yang masih dapat diterima.
 -	Untuk dataset berukuran sedang (10.000 - 100.000 elemen), Insertion Sort masih dapat dipertimbangkan jika kesederhanaan implementasi menjadi prioritas, namun algoritma O(n log n) mulai menunjukkan keunggulan signifikan.
 -	Untuk dataset berukuran besar (> 100.000 elemen), hanya algoritma O(n log n) yang praktis digunakan, dengan Quick Sort sebagai pilihan terbaik jika kasus terburuk O(n²) dapat dihindari (misalnya dengan pemilihan pivot secara acak).
-**5.	Trade-off Waktu dan Memori**
+### 5.	Trade-off Waktu dan Memori
 -	Terdapat trade-off antara efisiensi waktu dan penggunaan memori, yang terilustrasikan dengan jelas pada Merge Sort yang memerlukan ruang memori tambahan namun memberikan performa waktu yang sangat baik.
 -	Dalam lingkungan dengan batasan memori yang ketat, Quick Sort atau Shell Sort dapat menjadi pilihan yang lebih baik dibandingkan dengan Merge Sort.
 Eksperimen ini menunjukkan pentingnya pemilihan algoritma pengurutan yang tepat berdasarkan karakteristik data, ukuran dataset, dan batasan sumber daya yang ada. Algoritma yang efisien secara teoretis terbukti memberikan performa yang jauh lebih baik pada praktiknya, terutama ketika berhadapan dengan dataset berukuran besar.
